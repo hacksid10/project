@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch & Style Sewing Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="logo">Stitch & Style</div>
+        <a class="btn btn-small" href="#book">Book a Fitting</a>
+      </nav>
+      <div class="hero-content container">
+        <p class="eyebrow">Custom Tailoring • Alterations • Repairs</p>
+        <h1>Bring new life to every piece in your closet.</h1>
+        <p>
+          Professional sewing services for everyday wear, formal attire, and
+          one-of-a-kind designs. Fast turnarounds with quality craftsmanship.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#services">View Services</a>
+          <a class="btn btn-secondary" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="services">
+        <div class="section-heading">
+          <h2>Popular Sewing Services</h2>
+          <p>
+            From hemming jeans to custom wedding gown alterations, we tailor
+            each service to your exact fit.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Alterations</h3>
+            <p>
+              Precise resizing, hemming, tapering, and fit adjustments for all
+              garment types.
+            </p>
+            <span>Starting at $20</span>
+          </article>
+          <article class="card">
+            <h3>Repairs</h3>
+            <p>
+              Zipper replacements, seam repairs, patching, and restoration work
+              that lasts.
+            </p>
+            <span>Starting at $15</span>
+          </article>
+          <article class="card">
+            <h3>Custom Pieces</h3>
+            <p>
+              Turn your vision into reality with bespoke dresses, suits, and
+              special event garments.
+            </p>
+            <span>Starting at $120</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-highlight" id="book">
+        <div class="container split">
+          <div>
+            <h2>Simple 3-step fitting process</h2>
+            <ol>
+              <li>Send your request and photos through our quick form.</li>
+              <li>Book a consultation for measurements and fabric guidance.</li>
+              <li>Pick up your finished piece or request local delivery.</li>
+            </ol>
+          </div>
+          <form class="quote-form" id="quote-form">
+            <h3>Request a quote</h3>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+            <label>
+              Service needed
+              <select name="service" required>
+                <option value="">Select one</option>
+                <option>Alterations</option>
+                <option>Repair</option>
+                <option>Custom Piece</option>
+              </select>
+            </label>
+            <label>
+              Notes
+              <textarea
+                name="notes"
+                rows="3"
+                placeholder="Tell us about your garment and timeline"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn">Send Request</button>
+            <p class="form-message" id="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section container testimonials" id="contact">
+        <div class="section-heading">
+          <h2>What clients say</h2>
+        </div>
+        <blockquote>
+          “I brought in my bridal gown one week before the wedding and it fit
+          perfectly. The team was kind, quick, and incredibly detail-oriented.”
+        </blockquote>
+        <p class="attribution">— Maya R.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Stitch & Style</h3>
+          <p>Downtown Studio • Mon–Sat, 9:00 AM – 6:00 PM</p>
+        </div>
+        <div>
+          <p>Email: hello@stitchstyle.demo</p>
+          <p>Phone: (555) 010-4455</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
